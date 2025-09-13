@@ -1,0 +1,18 @@
+{
+  "EMAIL:john@example.com": "<EMAIL:3a2ca3a6>",
+  "PHONE:555-123-4567": "<PHONE:d67eaa7d>",
+  "PERSON:jason zhou \nchatgpt": "<PERSON:ae4f6497>",
+  "PERSON:jason zhou": "<PERSON:c33e9ed5>",
+  "ORG:ai experiments & products": "<ORG:b5b42657>",
+  "ORG:ai builder club": "<ORG:ccbf1a2f>",
+  "ORG:ai": "<ORG:c2686a12>",
+  "PERSON:jason ziyuan zhou": "<PERSON:f7de9730>",
+  "ORG:bentley faculty": "<ORG:46fc0c86>",
+  "ORG:harvard": "<ORG:1a652014>",
+  "ORG:harvard statistics": "<ORG:a26f3382>",
+  "ORG:ux designer": "<ORG:5159080d>",
+  "ORG:paypal": "<ORG:55ca2b62>",
+  "ORG:breadth & depth": "<ORG:b825bc2e>",
+  "PERSON:john smith": "<PERSON:1dcf60f2>",
+  "PHONE:(555) 123-4567": "<PHONE:40745331>"
+}

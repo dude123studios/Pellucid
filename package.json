@@ -1,0 +1,41 @@
+{
+  "name": "pellucid-ai-marketplace",
+  "version": "1.0.0",
+  "description": "Pellucid AI Alignment Data Marketplace - Complete System",
+  "scripts": {
+    "start": "bash start-all.sh",
+    "start:windows": "start-all.bat",
+    "start:frontend": "cd pellucid-marketplace && npm run dev",
+    "start:python": "cd pellucid-labeling-api && source venv/bin/activate && python main.py",
+    "start:privacy": "cd pellucid-labeling-api && source venv/bin/activate && python privacy_service.py",
+    "start:visualization": "cd pellucid-labeling-api && source venv/bin/activate && python visualization_service.py",
+    "install:all": "cd pellucid-marketplace && npm install && cd ../pellucid-labeling-api && python -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
+    "build": "cd pellucid-marketplace && npm run build",
+    "clean": "pkill -f 'python.*main.py' && pkill -f 'python.*privacy_service.py' && pkill -f 'python.*visualization_service.py' && pkill -f 'next.*dev'",
+    "status": "echo 'Checking service status...' && lsof -i :3000,8000,8001,8002 || echo 'No services running on expected ports'",
+    "test": "node test-data-flow.js",
+    "test:python": "cd pellucid-labeling-api && python test_services.py",
+    "verify": "node verify-setup.js"
+  },
+  "keywords": [
+    "ai",
+    "alignment",
+    "data",
+    "marketplace",
+    "privacy",
+    "visualization",
+    "nextjs",
+    "python",
+    "fastapi"
+  ],
+  "author": "Pellucid AI Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/pellucid-ai-marketplace"
+  }
+}
